@@ -1,5 +1,4 @@
 # -FastAuto-Learning
-KDD2022
 
 Auto-Learning Mechanism
 1. ensemble.py # Ensemble learning framework. 

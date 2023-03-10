@@ -1,0 +1,716 @@
+PID is : 31037
+TIME is : 2022-04-03T20:54:18.232201
+Seed is : 12345
+Model is : conttime
+CoefL2 is : 0.0
+FileData is : ./data/galanz/data05/48
+TrainRatio is : 1.0
+FilePretrain is : None
+TrackPeriod is : 1000
+MaxEpoch is : 50
+SizeBatch is : 10
+Optimizer is : adam
+LossType is : prediction
+WhatTrack is : rate
+LearnRate is : 0.001
+PartialPredict is : False
+PruneStream is : 0
+Dev Included Setting is: False
+PredictFirst is: True
+PredictLambda is: False
+reading and processing data ... 
+initialize the data processer ... 
+reading data for tag :  train
+reading data for tag :  dev
+finish data processer initialization ... 
+building model ... 
+get time quantiles ... 
+building controller ... 
+initializing Neural Hawkes with Continuous-time LSTM ... 
+train with prediction ... 
+computing predictions loss of neural Hawkes with continuous-time LSTM ... 
+memory efficient version ... 
+
+['nvcc', '-shared', '-O3', '-m64', '-Xcompiler', '-DCUDA_NDARRAY_CUH=c72d035fdf91890f3b36710688069b2e,-DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION,-fPIC,-fvisibility=hidden', '-Xlinker', '-rpath,/data1/lxt/.theano/compiledir_Linux-4.15--generic-x86_64-with-debian-stretch-sid-x86_64-2.7.13-64/cuda_ndarray', '-I/data1/lxt/anaconda3/envs/python2/lib/python2.7/site-packages/theano/sandbox/cuda', '-I/data1/lxt/anaconda3/envs/python2/lib/python2.7/site-packages/numpy/core/include', '-I/data1/lxt/anaconda3/envs/python2/include/python2.7', '-I/data1/lxt/anaconda3/envs/python2/lib/python2.7/site-packages/theano/gof', '-L/data1/lxt/anaconda3/envs/python2/lib', '-o', '/data1/lxt/.theano/compiledir_Linux-4.15--generic-x86_64-with-debian-stretch-sid-x86_64-2.7.13-64/cuda_ndarray/cuda_ndarray.so', 'mod.cu', '-lcublas', '-lpython2.7', '-lcudart']
+creating Adam optimizer ... 
+learn rate is set to :  0.001
+setting learning rate :  0.001
+computing updates ... 
+updates computed ! 
+optimize prediction ... 
+compiling training function ... 
+compiling dev function ... 
+model finished, comilation time is  31.0
+building training log ... 
+creating training log file ... 
+training epoch  0
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  1
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  2
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  3
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  4
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  5
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  6
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  7
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  8
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+Now we start validating after batches  1000
+in dev, the step is out of  9 13
+getting model ... 
+saving model ... 
+continue tracking log ... 
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  9
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  10
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  11
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  12
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  13
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  14
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  15
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  16
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+Now we start validating after batches  1000
+in dev, the step is out of  9 13
+getting model ... 
+saving model ... 
+continue tracking log ... 
+training epoch  17
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  18
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  19
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  20
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  21
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  22
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  23
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  24
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  25
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+Now we start validating after batches  1000
+in dev, the step is out of  9 13
+continue tracking log ... 
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  26
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  27
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  28
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  29
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  30
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  31
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  32
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  33
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+Now we start validating after batches  1000
+in dev, the step is out of  9 13
+continue tracking log ... 
+in training, the step is out of  109 118
+training epoch  34
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  35
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  36
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  37
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  38
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  39
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  40
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  41
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  42
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+Now we start validating after batches  1000
+in dev, the step is out of  9 13
+continue tracking log ... 
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  43
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  44
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  45
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  46
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  47
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  48
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+training epoch  49
+shuffling training data idx ... 
+in training, the step is out of  9 118
+in training, the step is out of  19 118
+in training, the step is out of  29 118
+in training, the step is out of  39 118
+in training, the step is out of  49 118
+in training, the step is out of  59 118
+in training, the step is out of  69 118
+in training, the step is out of  79 118
+in training, the step is out of  89 118
+in training, the step is out of  99 118
+in training, the step is out of  109 118
+finish tracking log ... 
+finish training

@@ -30,8 +30,8 @@ DP component
 
 
 # Run
-1. Data acquisition module
-· Code path：-FastAuto-Learning/spider/jd.py
+1. Data acquisition module.
+· Code path：-FastAuto-Learning/spider/jd.py.
 · Function： Crawl Jingdong e-commerce page on the commodity information
 · Output： Commodity pictures, titles and other information on the e-commerce platform
 · Modify paths：

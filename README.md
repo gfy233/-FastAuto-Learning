@@ -27,3 +27,15 @@ DP component
 3. DpModels.py # the code of dot processing.
 4. DpOptimizers # optimization strategies of DP.
 5. DpUtils.py # util functions of DP component.
+
+
+# Run
+1. Data acquisition module
+· Code path：-FastAuto-Learning/spider/jd.py
+· Function： Crawl Jingdong e-commerce page on the commodity information
+· Output： Commodity pictures, titles and other information on the e-commerce platform
+· Modify paths：
+Line 18 : csv_file = "./jd.csv"	，Specifies the address to save the text content
+Line 101:pname = product['name'].replace("\t","").replace(" ",""),Specify the location to save the image content
+· Run：
+python jd.py

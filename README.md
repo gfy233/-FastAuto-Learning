@@ -35,6 +35,43 @@ Data acquisition module.
 2. Function： Crawl Jingdong e-commerce page on the commodity information
 3. Output： Commodity pictures, titles and other information on the e-commerce platform
 4. Modify paths：
- 4.1. Line 18 : csv_file = "./jd.csv"	，Specifies the address to save the text content
- 4.2. Line 101:pname = product['name'].replace("\t","").replace(" ",""),Specify the location to save the image content
+(1)Line 18 : csv_file = "./jd.csv"	，Specifies the address to save the text content
+(2)Line 101:pname = product['name'].replace("\t","").replace(" ",""),Specify the location to save the image content
 5. Run： python jd.py
+
+Data pre-process
+1. Code path：-FastAuto-Learning/process_data/fencang.py
+2. Input： Historical sales data
+3. Output： Sales data after warehouse division processing
+4. Modify paths：
+(1)Line 22 :  with open("../galanz_data.json", 'r', encoding='utf-8') as f1:，指定读入的历史销量数据
+(2)line31:  filename='../fencang/'+warehouse+'.json'，指定输出路径
+5. run：
+python fencang.py
+
+
+Get Picture Feature
+1. Code path：-FastAuto-Learning/process_data/picture_feature.py
+2. Function： Get figure embedding accroding to towhee 
+3. Input： Figure
+4. Output： Figure embedding
+5. run：trans_SelectBasic_new_1.py call this function
+
+
+Get Text Feature
+1. Code path：-FastAuto-Learning/process_data/text_feature.py
+2. Function： Get text embedding accroding to towhee 
+3. Input： Text
+4. Output： Text embedding
+5. run：trans_SelectBasic_new_1.py call this function
+
+Feature engineering
+1. Code path：-FastAuto-Learning/process_data/trans_SelectBasic_new_1.py
+2. Function： Generate a script for sorting warehouse features after cleaning, normalization, and feature screening
+3. Input：Historical inventory data, pictures, text features
+4. Output： Feature file
+5. Modify paths
+(1)Line 29 : inputDir = '/data1/lxt/Galanz-TimeSeries/gfy/fencang_selected/'，Enter historical inventory information
+(2)Line 32:inputDir = '/data1/lxt/Galanz-TimeSeries/gfy/fencang_selected/'，Specifies the save address for the feature file
+6. run：
+python trans_SelectBasic_new_1.py

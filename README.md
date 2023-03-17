@@ -35,6 +35,6 @@ Data acquisition module.
 2. Function： Crawl Jingdong e-commerce page on the commodity information
 3. Output： Commodity pictures, titles and other information on the e-commerce platform
 4. Modify paths：
-(1) Line 18 : csv_file = "./jd.csv"	，Specifies the address to save the text content
-(2) Line 101:pname = product['name'].replace("\t","").replace(" ",""),Specify the location to save the image content
+ 4.1. Line 18 : csv_file = "./jd.csv"	，Specifies the address to save the text content
+ 4.2. Line 101:pname = product['name'].replace("\t","").replace(" ",""),Specify the location to save the image content
 5. Run： python jd.py

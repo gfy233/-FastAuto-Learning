@@ -75,3 +75,43 @@ Feature engineering
 (2)Line 32:inputDir = '/data1/lxt/Galanz-TimeSeries/gfy/fencang_selected/'，Specifies the save address for the feature file
 6. run：
 python trans_SelectBasic_new_1.py
+
+
+Time series tensor
+1. Code path：-FastAuto-Learning/src/Time-Series-Tensor/models/change_tensor.py -
+2. Function： Gets a tensor representation of a historical time series
+3. Input： Time series of historical sales of products
+4. Output： Time series tensor
+5. Modify paths
+      (1)Line128: data = '../galanz/0e117c1684b5ebd6093fc17b468455d1.json'，Specifies the historical sales data entry path
+      (2)Line191：df.to_csv("./time_tensor.csv"), Specifies the tensor output path
+6. Run：
+python change_tensor.py 
+
+
+Ensemble
+1. Code path：-FastAuto-Learning/src/ensemble.py 
+2. Input： Feature File
+3. Output： Future sales forecast
+4. Modify paths：
+      （1）Line 44: Input_future_folder = '/data/gfy2021/gfy/KDD/process_data/fencang_feature_selected_normal_for_1214_1227_text+pic/'，Specifies the signature file input path
+      （2）Line 52：Output_future_folder = '/data/gfy2021/gfy/KDD/stacking/stacking_result/
+result_future_sim_0.75/' 指定预测结果输出路径
+5. Run：
+python ensemble.py 
+
+
+STL COST
+1. Code path：-FastAuto-Learning/src/changeCSV_for_compare.py
+2. Function：According to the sales volume predicted by the model, the inventory cost caused by replenishing with the predicted value of the model is calculated
+3. Input： Model prediction result
+4. Output： Inventory costing results (STL COST)
+5. Modify path：
+(1)Line 11: raw_test_result = '/data1/lxt/galanz_test/stacking/FeatureResult
+/result_'+date_+'/'，Specifies the prediction result file path
+(2)Line 29：ALL_result_file_future = '/data1/lxt/galanz_test/stacking/allResult
+/ALL_future_'+date_+'成本.csv'，Specify an output path for the costing results
+6. Run：
+python changeCSV_for_compare.py
+
+
